@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueTech Landing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Reset & Fonts */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f7fc;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #1e88e5, #64b5f6);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      background-color: #fff;
+      color: #1e88e5;
+      padding: 12px 28px;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background-color: #e3f2fd;
+    }
+
+    /* Sections */
+    .container {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2rem;
+      color: #0d47a1;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      flex: 1 1 280px;
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #1565c0;
+      margin-bottom: 10px;
+    }
+
+    /* Subscription */
+    .subscribe-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    .subscribe-box input[type="email"] {
+      padding: 10px;
+      width: 60%;
+      max-width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    .subscribe-box button {
+      padding: 10px 20px;
+      background-color: #1e88e5;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .subscribe-box button:hover {
+      background-color: #1565c0;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0d47a1;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 60px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .cards {
+        flex-direction: column;
+      }
+
+      .subscribe-box input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .subscribe-box button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>Welcome to BlueTech</h1>
+    <p>Powerful and modern landing pages made simple.</p>
+    <a href="#features" class="btn-primary">Explore Features</a>
+  </header>
+
+  <!-- Features -->
+  <section class="container" id="features">
+    <h2 class="section-title">Features</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Lightning Fast</h3>
+        <p>Optimized performance ensures your website loads instantly on any device.</p>
+      </div>
+      <div class="card">
+        <h3>Mobile Friendly</h3>
+        <p>Designed with a responsive layout to look stunning on all screen sizes.</p>
+      </div>
+      <div class="card">
+        <h3>Easy Integration</h3>
+        <p>Seamlessly connect with tools like Google Analytics, Forms, and more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="container" id="about">
+    <h2 class="section-title">About Us</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Team">
+        <h3>Creative Team</h3>
+        <p>We’re a group of developers and designers committed to clean, intuitive interfaces.</p>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Mission">
+        <h3>Our Mission</h3>
+        <p>To empower creators with flexible, lightweight tools for the modern web.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscribe -->
+  <section class="container" id="subscribe">
+    <div class="subscribe-box">
+      <h2>Stay in the Loop</h2>
+      <form>
+        <input type="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 BlueTech. Built with care and craft.
+  </footer>
+
+</body>
+</html>
